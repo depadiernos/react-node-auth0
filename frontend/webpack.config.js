@@ -7,6 +7,7 @@ const dev = process.env.NODE_ENV !== "production"
 module.exports = {
   mode: dev ? "development" : "production",
   devtool: "source-map",
+  entry: ["babel-polyfill", "./src/index.js"],
   module: {
     rules: [
       {
