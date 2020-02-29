@@ -6,6 +6,7 @@ import { createBrowserHistory } from "history"
 import PrivateRoute from "./components/privateroute"
 import NavBar from "./components/navbar"
 import Dashboard from "./pages/dashboard"
+import PrivateApi from "./pages/privateapi"
 import { Auth0Provider, useAuth0 } from "./components/authwrapper"
 import config from "../../auth_config.json"
 
@@ -27,6 +28,7 @@ const App = () => {
     <Style>
       <NavBar />
       <PrivateRoute exact path="/" component={Dashboard} />
+      <PrivateRoute exact path="/api" component={PrivateApi} />
     </Style>
   )
 }
@@ -40,6 +42,7 @@ ReactDOM.render(
     domain={config.domain}
     client_id={config.clientId}
     redirect_uri={window.location.origin}
+    audience={config.audience}
     onRedirectCallback={onRedirectCallback}>
     <Router history={history}>
       <App />

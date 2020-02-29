@@ -14,8 +14,9 @@ router.get("/users", async (req, res, next) => {
 
 router.get("/user", async (req, res, next) => {
   try {
-    const user = await usersModel.findById(req.user.id)
-    res.json(user)
+    //const user = await usersModel.findById(req.user.id)
+    //res.json(user)
+    res.send({message: "Your Access Token was successfully validated!"})
   } catch (err) {
     next(err)
   }

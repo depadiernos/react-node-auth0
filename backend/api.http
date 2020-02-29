@@ -1,0 +1,15 @@
+###
+GET http://localhost:5000/api/user
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1FRTRPVFk0TmpJeU16UTFOamRGTTBFek5qSXdNRGcxUkVOQ05qTTNRa1l5TWtGR05EY3lRZyJ9.eyJpc3MiOiJodHRwczovL2hhemFyZHNvZi5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDA1NDA2NDE1Mzg0NTUzNzQxNjciLCJhdWQiOlsiaGF6YXJkc29mLmNvbSIsImh0dHBzOi8vaGF6YXJkc29mLmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE1ODI5MzY5NTYsImV4cCI6MTU4MzAyMzM1NiwiYXpwIjoiV2hsb0xIVmxmZzJOWW1kMzV0aDJacW9Dd0VEcDA1ZWoiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIn0.urXsYdARhaVDA270ezir4TslqjE24Upb2IH0x7W5xLW5k9HgybkmWyyz5MxZUX88l37ZxLy2yHGrb4fIRWl50y5NAul7FfhcLhjNeLrooISp8e8t3w4_HBnGr6T4YhAz8g5GGKemdmK-ATF2oWiv95OxcPelgRzXH7gAzxryD7zSiFIMLzG7Gi9ZFCxEtPNck_V0dAS95tri3C9iP9iGCDQ1We-vgANoov3UG9eUrSDbR9Z1sq3_X89gTaCWvNGnR6tWS5o3bEN9n6j-mIyTbwrUbpiv62cmV7Rqw3BZEabuNPi1GUwZ47IzD3sTcyT2sTk_e_jjeX_6phdy6h5KFA
+
+###
+POST https://bw-weightlifting-journal.herokuapp.com/api/login/
+content-type: application/json
+
+{
+    "email": "me2@me.com",
+    "password": "password1"
+}
+
+###

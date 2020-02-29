@@ -1,7 +1,8 @@
 const express = require("express")
 const cors = require("cors")
 const usersRouter = require("./routes/users-router")
-const authenticate = require("./middleware/authorization")
+const authorization = require("./middleware/authorization")
+
 
 const server = express()
 const port = process.env.PORT || 5000
@@ -15,10 +16,11 @@ const logger = () => (req, res, next) => {
   next()
 }
 
+
 server.use(cors())
 server.use(logger())
 
-server.use("/api/", authenticate, usersRouter)
+server.use("/api/", authorization, usersRouter)
 
 server.get("/", (req, res) => {
   res.json({ message: "Backend API" })
