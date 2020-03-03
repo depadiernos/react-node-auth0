@@ -12,7 +12,7 @@ const NavBar = () => {
       )}
 
       {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
-        <Link to="/api">Api</Link>
+        <Link to="/api"><button>Api</button></Link>
     </div>
   );
 };
