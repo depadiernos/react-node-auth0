@@ -8,7 +8,7 @@ import NavBar from "./components/navbar"
 import Dashboard from "./pages/dashboard"
 import PrivateApi from "./pages/privateapi"
 import { Auth0Provider, useAuth0 } from "./components/authwrapper"
-import config from "../../auth_config.json"
+import config from "../auth_config.json"
 
 // A function that routes the user to the right place
 // after login

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import { useAuth0 } from "./authwrapper";
 
 const NavBar = () => {
@@ -11,6 +12,7 @@ const NavBar = () => {
       )}
 
       {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
+        <Link to="/api">Api</Link>
     </div>
   );
 };
